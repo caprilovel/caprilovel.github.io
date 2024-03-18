@@ -73,7 +73,7 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: /assets/lib/personal_pic.jpg
+avatar: /assets/img/personal_pic.jpg
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -104,7 +104,7 @@ assets:
     enabled: true # boolean, keep empty means false
     # specify the Jekyll environment, empty means both
     # only works if `assets.self_host.enabled` is 'true'
-    env: # [development|production]
+    env: development # [development|production]
 
 pwa:
   enabled: true # the option for PWA feature
