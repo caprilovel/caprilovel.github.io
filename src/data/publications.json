@@ -1,5 +1,71 @@
 [
   {
+    "title": "SPRINT-SVRG: Stochastic Performative Prediction With Variance Reduction",
+    "authors": [
+      { "name": "Tian Xie*"},
+      { "name": "Ding Zhu*", "self": true },
+      { "name": "Jia Liu" },
+      { "name": "Mohammad Mahdi Khalili" },
+      { "name": "Xueru Zhang" }
+    ],
+    "venue": "Preprint",
+    "type": "preprint",
+    "year": null,
+    "url": ""
+  },
+  {
+    "title": "PORT: Preference Optimization via Robust Token-Level Reweighting",
+    "authors": [
+      { "name": "Ding Zhu", "self": true },
+      { "name": "Xiukun Wei"},
+      { "name": "Tian Xie"},
+      { "name": "Zhihui Zhu" },
+      { "name": "Xueru Zhang" },
+      { "name": "Mohammad Mahdi Khalili" }
+    ],
+    "venue": "Preprint",
+    "type": "preprint",
+    "year": null,
+    "url": ""
+  },
+  {
+    "title": "WAQS: Weight Absorption for Quadratic Probing and Affine Steering",
+    "authors": [
+      { "name": "Mohammad Mahdi Khalili*" },
+      { "name": "Ding Zhu*", "self": true }
+    ],
+    "venue": "Preprint",
+    "type": "preprint",
+    "year": null,
+    "url": ""
+  },
+  {
+    "title": "Enhancing Model Robustness Against Noisy Labels via Kronecker Product Decomposition",
+    "authors": [
+      { "name": "Ding Zhu", "self": true },
+      { "name": "Zhiqun Zuo" },
+      { "name": "Xueru Zhang" },
+      { "name": "Mohammad Mahdi Khalili" }
+    ],
+    "venue": "Preprint",
+    "type": "preprint",
+    "year": null,
+    "url": ""
+  },
+  {
+    "title": "Limitations of In-Context Learning for Strategic Classification",
+    "authors": [
+      { "name": "Ding Zhu*", "self": true },
+      { "name": "Tian Xie*" },
+      { "name": "Xueru Zhang" },
+      { "name": "Mohammad Mahdi Khalili" }
+    ],
+    "venue": "Preprint",
+    "type": "preprint",
+    "year": null,
+    "url": ""
+  },
+  {
     "title": "An Efficient Training Algorithm for Models with Block-wise Sparsity",
     "authors": [
       { "name": "Ding Zhu", "self": true },
@@ -7,6 +73,7 @@
       { "name": "Mohammad Mahdi Khalili" }
     ],
     "venue": "TMLR",
+    "type": "journal",
     "year": null,
     "url": ""
   },
@@ -18,6 +85,7 @@
       { "name": "Mohammad Mahdi Khalili" }
     ],
     "venue": "AISTATS",
+    "type": "conference",
     "year": 2025,
     "url": ""
   },
@@ -29,6 +97,7 @@
       { "name": "Mohammad Mahdi Khalili" }
     ],
     "venue": "NAACL findings",
+    "type": "conference",
     "year": 2025,
     "url": ""
   },
@@ -40,6 +109,7 @@
       { "name": "Juan Liu" }
     ],
     "venue": "IJCNN",
+    "type": "conference",
     "year": 2024,
     "url": ""
   }
