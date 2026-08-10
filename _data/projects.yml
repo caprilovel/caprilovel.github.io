@@ -1,0 +1,15 @@
+# Rendered by _tabs/projects.md as a grid of cards.
+# Duplicate the block below for each project; delete the placeholder once
+# you have real entries. `links` is optional — omit it or leave the list
+# empty to hide the links row on a card.
+
+- title: "[TODO: Project name]"
+  period: "[TODO: e.g. 2024]"
+  description: "[TODO: one or two sentence summary — what it does and what you built.]"
+  tags:
+    - "[TODO: tag]"
+  links:
+    - label: Code
+      url: "[TODO: https://github.com/...]"
+    - label: Demo
+      url: "[TODO]"

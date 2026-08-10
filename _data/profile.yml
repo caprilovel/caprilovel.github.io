@@ -1,0 +1,46 @@
+# Academic profile data, rendered by _includes/profile-header.html on the homepage.
+#
+# Anything wrapped in [TODO: ...] is a placeholder — replace it with your own
+# text. Fields left as an empty list ([]) simply hide that section until you
+# add entries.
+
+# One-line position + affiliation, shown right under your name.
+position: "[TODO: e.g. PhD Student]"
+department: "[TODO: e.g. Dept. of Electrical and Computer Engineering]"
+institution: "[TODO: e.g. The Ohio State University]"
+advisor: "Prof. Mohammad Mahdi Khalili"
+
+# 2-4 sentence bio, shown as a paragraph under the position line.
+# Plain text or a few sentences; Markdown is not processed here.
+bio: >
+  [TODO: Write a short bio — who you are, what you work on, and what you're
+  looking for (e.g. collaborations, PhD programs, internships).]
+
+# Shown as small tag/badge pills. These four are inferred from the topics
+# already covered in your publications.md — edit freely.
+research_interests:
+  - Trustworthy & Fair Machine Learning
+  - Model Efficiency & Sparsity
+  - Interpretability & Robustness of Neural Networks
+  - Biomedical Signal Processing
+
+# Reverse-chronological news/updates timeline.
+# The four entries below are real, derived from _tabs/publications.md;
+# add new ones above them as things happen. Remove the [TODO] entry once
+# you've decided whether to keep this section going forward.
+news:
+  - date: "2025"
+    text: '"Post-processing for Fair Regression via Explainable SVD" accepted to AISTATS 2025.'
+  - date: "2025"
+    text: '"Neuroplasticity and corruption in model mechanisms: A case study of indirect object identification" accepted to NAACL 2025.'
+  - date: "2024"
+    text: '"RA-LENet: R-Wave Attention and Local Enhancement for Noise Reduction in ECG Signals" accepted to IJCNN 2024.'
+  - date: "[TODO]"
+    text: "[TODO: add your next update here]"
+
+# Optional education timeline, shown on the CV page. Leave empty to hide.
+education:
+  - degree: "[TODO: e.g. Ph.D. in Electrical and Computer Engineering]"
+    school: "[TODO: e.g. The Ohio State University]"
+    period: "[TODO: e.g. 2022 -- Present]"
+    details: "[TODO: advisor, focus area, etc.]"

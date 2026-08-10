@@ -1,6 +1,7 @@
 ---
-icon: fas fa-archive
-order: 4
+title: Publications
+icon: fas fa-book
+order: 1
 ---
 - "An Efficient Training Algorithm for Models with Block-wise Sparsity " **Ding Zhu**, Zhiqun Zuo, Mohammad Mahdi Khalili was accepted by TMLR.
 

@@ -1,0 +1,139 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/breakpoints' as bp;
+@use '../abstracts/placeholders';
+
+.profile-header {
+  margin-top: 1rem;
+  gap: 1.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  @include bp.md {
+    flex-wrap: nowrap;
+  }
+
+  &__avatar img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: var(--card-shadow);
+
+    @include bp.md {
+      width: 128px;
+      height: 128px;
+    }
+  }
+
+  &__name {
+    font-family: v.$font-family-heading;
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--heading-color);
+    margin-bottom: 0.3rem;
+  }
+
+  &__position {
+    color: var(--text-muted-color);
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+  }
+
+  &__bio {
+    color: var(--text-color);
+    line-height: 1.7;
+    max-width: 46rem;
+    margin-bottom: 1rem;
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.25rem;
+    margin-bottom: 1rem;
+
+    a {
+      color: var(--text-color);
+
+      &:hover {
+        color: var(--link-color);
+      }
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    .tag {
+      display: inline-block;
+      font-size: 0.8rem;
+      line-height: 1.4;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid var(--tag-border);
+      background: var(--search-tag-bg);
+      color: var(--text-color);
+    }
+  }
+} /* .profile-header */
+
+.profile-news {
+  margin-top: 2.25rem;
+
+  &__title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: 1rem;
+  }
+
+  .timeline {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    border-left: 2px solid var(--timeline-color);
+
+    li {
+      position: relative;
+      padding: 0 0 1.1rem 1.25rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: -5px;
+        top: 0.3rem;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--timeline-node-bg);
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .timeline__date {
+    display: inline-block;
+    min-width: 3.5rem;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    color: var(--text-muted-color);
+    margin-right: 0.5rem;
+  }
+
+  .timeline__text {
+    color: var(--text-color);
+  }
+} /* .profile-news */
+
+.post-list__title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-top: 2.5rem;
+  margin-bottom: 0;
+}

@@ -1,0 +1,70 @@
+@use '../abstracts/breakpoints' as bp;
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  @include bp.md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.project-card {
+  border: 1px solid var(--main-border-color);
+  border-radius: 0.7rem;
+  padding: 1.1rem 1.25rem;
+  background: var(--card-bg);
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.25rem 0.75rem;
+  }
+
+  &__title {
+    font-weight: 700;
+    color: var(--heading-color);
+  }
+
+  &__period {
+    color: var(--text-muted-color);
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  &__desc {
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0.5rem 0;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.5rem;
+
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid var(--tag-border);
+      background: var(--search-tag-bg);
+      color: var(--text-color);
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 1rem;
+
+    a {
+      color: var(--link-color);
+    }
+  }
+} /* .project-card */

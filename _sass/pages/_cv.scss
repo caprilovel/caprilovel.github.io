@@ -1,0 +1,40 @@
+.cv-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 1rem;
+
+  li {
+    padding: 0.75rem 0;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--main-border-color);
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.25rem 1rem;
+  }
+
+  &__title {
+    font-weight: 700;
+    color: var(--heading-color);
+  }
+
+  &__period {
+    color: var(--text-muted-color);
+    white-space: nowrap;
+  }
+
+  &__subtitle {
+    color: var(--text-color);
+  }
+
+  &__details {
+    color: var(--text-muted-color);
+    font-size: 0.9rem;
+    margin-top: 0.15rem;
+  }
+} /* .cv-list */

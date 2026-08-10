@@ -1,0 +1,71 @@
+<!-- Academic profile hero, shown at the top of the homepage. -->
+<!-- Content lives in _data/profile.yml -- edit that file, not this one. -->
+
+{% assign profile = site.data.profile %}
+
+<section class="profile-header d-flex">
+  <div class="profile-header__avatar flex-shrink-0">
+    {%- if site.avatar != empty and site.avatar -%}
+      {%- capture avatar_url -%}
+        {% include media-url.html src=site.avatar %}
+      {%- endcapture -%}
+      <img src="{{- avatar_url -}}" alt="{{ site.social.name }}" onerror="this.style.display='none'">
+    {%- endif -%}
+  </div>
+
+  <div class="profile-header__info flex-grow-1">
+    <h1 class="profile-header__name">{{ site.social.name }}</h1>
+
+    <p class="profile-header__position">
+      {%- if profile.position != empty -%}{{ profile.position }}{%- endif -%}
+      {%- if profile.department != empty -%}, {{ profile.department }}{%- endif -%}
+      {%- if profile.institution != empty -%}, {{ profile.institution }}{%- endif -%}
+      {%- if profile.advisor != empty -%}
+        <br>Advised by {{ profile.advisor }}
+      {%- endif -%}
+    </p>
+
+    {% if profile.bio != empty %}
+      <p class="profile-header__bio">{{ profile.bio }}</p>
+    {% endif %}
+
+    <div class="profile-header__links">
+      {% if site.social.email %}
+        <a href="javascript:location.href = 'mailto:' + ['{{ site.social.email | split: '@' | first }}','{{ site.social.email | split: '@' | last }}'].join('@')">
+          <i class="fas fa-envelope fa-fw"></i> Email
+        </a>
+      {% endif %}
+      {% if site.github.username %}
+        <a href="https://github.com/{{ site.github.username }}" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github fa-fw"></i> GitHub
+        </a>
+      {% endif %}
+      <a href="{{ '/publications/' | relative_url }}"><i class="fas fa-book fa-fw"></i> Publications</a>
+      <a href="{{ '/cv/' | relative_url }}"><i class="fas fa-file-alt fa-fw"></i> CV</a>
+    </div>
+
+    {% if profile.research_interests.size > 0 %}
+      <div class="profile-header__tags">
+        {% for tag in profile.research_interests %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</section>
+<!-- .profile-header -->
+
+{% if profile.news.size > 0 %}
+  <section class="profile-news">
+    <h2 class="profile-news__title">News</h2>
+    <ul class="timeline">
+      {% for item in profile.news %}
+        <li>
+          <span class="timeline__date">{{ item.date }}</span>
+          <span class="timeline__text">{{ item.text }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <!-- .profile-news -->
+{% endif %}
