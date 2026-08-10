@@ -1,0 +1,46 @@
+[
+  {
+    "title": "An Efficient Training Algorithm for Models with Block-wise Sparsity",
+    "authors": [
+      { "name": "Ding Zhu", "self": true },
+      { "name": "Zhiqun Zuo" },
+      { "name": "Mohammad Mahdi Khalili" }
+    ],
+    "venue": "TMLR",
+    "year": null,
+    "url": ""
+  },
+  {
+    "title": "Post-processing for Fair Regression via Explainable SVD",
+    "authors": [
+      { "name": "Zhiqun Zuo" },
+      { "name": "Ding Zhu", "self": true },
+      { "name": "Mohammad Mahdi Khalili" }
+    ],
+    "venue": "AISTATS",
+    "year": 2025,
+    "url": ""
+  },
+  {
+    "title": "Neuroplasticity and corruption in model mechanisms: A case study of indirect object identification",
+    "authors": [
+      { "name": "Vishnu Kabir Chhabra" },
+      { "name": "Ding Zhu", "self": true },
+      { "name": "Mohammad Mahdi Khalili" }
+    ],
+    "venue": "NAACL findings",
+    "year": 2025,
+    "url": ""
+  },
+  {
+    "title": "RA-LENet: R-Wave Attention and Local Enhancement for Noise Reduction in ECG Signals",
+    "authors": [
+      { "name": "Yaolong Zhu" },
+      { "name": "Ding Zhu", "self": true },
+      { "name": "Juan Liu" }
+    ],
+    "venue": "IJCNN",
+    "year": 2024,
+    "url": ""
+  }
+]

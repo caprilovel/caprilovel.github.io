@@ -1,0 +1,62 @@
+---
+import Layout from '../components/Layout.astro';
+import AdvisorList from '../components/AdvisorList.astro';
+import site from '../data/site.json';
+---
+
+<Layout title="About" description={`About ${site.author} — ${site.description}`} image="/og-about.svg">
+  <div class="flex flex-col gap-8 md:flex-row md:items-start">
+    <div class="flex-1">
+      <h1 class="mb-2 font-serif text-3xl font-bold text-slate-900 dark:text-white">About Me</h1>
+      <AdvisorList advisors={site.advisors} />
+
+      {site.bio && <p class="mt-5 leading-relaxed text-slate-700 dark:text-slate-300">{site.bio}</p>}
+    </div>
+
+    <div class="mx-auto w-56 shrink-0 md:mx-0 md:w-72">
+      {site.aboutPhoto ? (
+        <img src={site.aboutPhoto} alt={site.author} class="aspect-[4/5] w-full rounded-2xl object-cover shadow-sm" />
+      ) : (
+        <div class="flex aspect-[4/5] w-full flex-col items-center justify-center gap-1 rounded-2xl border-2 border-dashed border-slate-300 px-4 text-center text-sm text-slate-400 dark:border-slate-700 dark:text-slate-500">
+          <span>Photo placeholder</span>
+          <span class="text-xs">Set site.aboutPhoto in site.json</span>
+        </div>
+      )}
+    </div>
+  </div>
+
+  {site.researchInterests?.length > 0 && (
+    <section class="mt-8">
+      <h2 class="mb-3 font-serif text-xl font-semibold text-slate-900 dark:text-white">Research Interests</h2>
+      <div class="flex flex-wrap gap-2">
+        {site.researchInterests.map((tag) => <span class="tag">{tag}</span>)}
+      </div>
+    </section>
+  )}
+
+  {site.education?.length > 0 && (
+    <section class="mt-8">
+      <h2 class="mb-3 font-serif text-xl font-semibold text-slate-900 dark:text-white">Education</h2>
+      <ul class="divide-y divide-slate-200 dark:divide-slate-800">
+        {site.education.map((e) => (
+          <li class="py-3">
+            <div class="flex flex-wrap items-baseline justify-between gap-x-4">
+              <span class="font-medium text-slate-900 dark:text-white">{e.degree}</span>
+              {e.period && <span class="text-sm text-slate-500 dark:text-slate-400">{e.period}</span>}
+            </div>
+            {e.school && <div class="text-slate-700 dark:text-slate-300">{e.school}</div>}
+            {e.details && <div class="text-sm text-slate-500 dark:text-slate-400">{e.details}</div>}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <section class="mt-8">
+    <h2 class="mb-2 font-serif text-xl font-semibold text-slate-900 dark:text-white">Contact</h2>
+    <p class="text-slate-700 dark:text-slate-300">
+      Reach out via the <a class="text-indigo-600 hover:underline dark:text-indigo-400" href="/contact">contact page</a>
+      or email <a class="text-indigo-600 hover:underline dark:text-indigo-400" href={`mailto:${site.email}`}>{site.email}</a>.
+    </p>
+  </section>
+</Layout>

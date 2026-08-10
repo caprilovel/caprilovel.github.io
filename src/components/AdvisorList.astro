@@ -1,0 +1,27 @@
+---
+// Renders "Advised by A, B, and C", linking each advisor whose `url` is set.
+const { advisors = [], class: className = '' } = Astro.props;
+---
+
+{advisors.length > 0 && (
+  <p class:list={['text-slate-500 dark:text-slate-400', className]}>
+    Advised by{' '}
+    {advisors.map((a, i) => (
+      <>
+        {i > 0 && (i === advisors.length - 1 ? (advisors.length > 2 ? ', and ' : ' and ') : ', ')}
+        {a.url ? (
+          <a
+            href={a.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-slate-600 underline decoration-slate-300 underline-offset-2 transition-colors hover:text-indigo-600 dark:text-slate-300 dark:hover:text-indigo-400"
+          >
+            {a.name}
+          </a>
+        ) : (
+          <span>{a.name}</span>
+        )}
+      </>
+    ))}
+  </p>
+)}

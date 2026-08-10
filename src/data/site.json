@@ -1,0 +1,70 @@
+{
+  "title": "Ding Zhu",
+  "author": "Ding Zhu",
+  "avatar": "/avatar.jpg",
+  "aboutPhoto": "/aboutphoto.jpg",
+  "position": "I am a third-year PhD Student",
+  "department": "on Dept. of Computer Science and Engineering",
+  "institution": "at The Ohio State University",
+  "advisors": [
+    {
+      "name": "Prof. Mohammad Mahdi Khalili",
+      "url": "https://khalilimahdi.github.io/"
+    },
+    {
+      "name": "Prof. Xueru Zhang",
+      "url": "https://xueruzhang.github.io/"
+    }
+  ],
+  "description": "Ding Zhu's academic homepage — research on trustworthy and fair machine learning, model efficiency, and interpretability.",
+  "bio": "I'm a third-year PhD student in the Department of Computer Science and Engineering at The Ohio State University, advised by Prof. Mohammad Mahdi Khalili and Prof. Xueru Zhang. My research sits at the intersection of trustworthy and fair machine learning, model efficiency, and interpretability — from post-processing methods for fair regression to sparsity-aware training algorithms and studies of how neural networks encode and lose information. I'm also interested in applying these ideas to real-world signals, such as denoising ECG recordings. I'm always glad to connect with others working on related problems.",
+  "siteUrl": "https://caprilovel.github.io",
+  "image": "/og-default.svg",
+  "email": "zhu.3723@osu.edu",
+  "social": {
+    "github": "caprilovel",
+    "twitter": "",
+    "linkedin": "https://www.linkedin.com/in/zhu-ding-820788295/",
+    "googleScholar": "https://scholar.google.com/citations?user=jW2BUGcAAAAJ"
+  },
+  "researchInterests": [
+    "Trustworthy & Fair Machine Learning",
+    "Model Efficiency & Sparsity",
+    "Interpretability & Robustness of Neural Networks",
+    "Biomedical Signal Processing"
+  ],
+  "news": [
+    {
+      "date": "2025",
+      "text": "“Post-processing for Fair Regression via Explainable SVD” accepted to AISTATS 2025."
+    },
+    {
+      "date": "2025",
+      "text": "“Neuroplasticity and corruption in model mechanisms: A case study of indirect object identification” accepted to NAACL 2025."
+    },
+    {
+      "date": "2024",
+      "text": "“RA-LENet: R-Wave Attention and Local Enhancement for Noise Reduction in ECG Signals” accepted to IJCNN 2024."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Computer Science and Engineering",
+      "school": "The Ohio State University",
+      "period": "2024 Spring -- Present",
+      "details": "Advised by Prof. Mohammad Mahdi Khalili and Prof. Xueru Zhang."
+    },
+    {
+      "degree": "M.S. in Artificial Intelligence",
+      "school": "Wuhan University",
+      "period": "2020 Fall -- 2023 Fall",
+      "details": "Advised by Prof. Juan Liu."
+    },
+    {
+      "degree": "B.S. in Computer Science and Engineering",
+      "school": "Wuhan University",
+      "period": "2016 Fall -- 2020 Fall",
+      "details": ""
+    }
+  ]
+}

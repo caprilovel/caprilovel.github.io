@@ -1,0 +1,17 @@
+---
+import Layout from '../components/Layout.astro';
+import PublicationCard from '../components/PublicationCard.astro';
+import site from '../data/site.json';
+import publications from '../data/publications.json';
+---
+
+<Layout title="Publications" description="List of publications and preprints." image="/og-publications.svg">
+  <h1 class="mb-1 font-serif text-3xl font-bold text-slate-900 dark:text-white">Publications</h1>
+  <p class="mb-6 text-sm text-slate-500 dark:text-slate-400">
+    {publications.length} publication{publications.length === 1 ? '' : 's'} &middot; {site.author} is bolded below.
+  </p>
+
+  <div class="space-y-3">
+    {publications.map((pub) => <PublicationCard pub={pub} />)}
+  </div>
+</Layout>
