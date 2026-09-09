@@ -18,7 +18,7 @@
     }
   ],
   "description": "Ding Zhu's academic homepage — research on trustworthy and fair machine learning, model efficiency, and interpretability.",
-  "bio": "I'm a third-year PhD student in the Department of Computer Science and Engineering at The Ohio State University, advised by Prof. Mohammad Mahdi Khalili and Prof. Xueru Zhang. My research sits at the intersection of trustworthy and fair machine learning, model efficiency, and interpretability — from post-processing methods for fair regression to sparsity-aware training algorithms and studies of how neural networks encode and lose information. I'm also interested in applying these ideas to real-world signals, such as denoising ECG recordings. I'm always glad to connect with others working on related problems.",
+  "bio": "I'm a third-year PhD student in the Department of Computer Science and Engineering at The Ohio State University, advised by Prof. Mohammad Mahdi Khalili and Prof. Xueru Zhang. My research sits at the intersection of trustworthy and fair machine learning, model efficiency, and interpretability — from post-processing methods for fair regression to sparsity-aware training algorithms and studies of how neural networks encode and lose information. I'm always glad to connect with others working on related problems.",
   "siteUrl": "https://caprilovel.github.io",
   "image": "/og-default.svg",
   "email": "zhu.3723@osu.edu",
@@ -29,10 +29,9 @@
     "googleScholar": "https://scholar.google.com/citations?user=jW2BUGcAAAAJ"
   },
   "researchInterests": [
-    "Trustworthy & Fair Machine Learning",
+    "Trustworthy & Robust Machine Learning",
     "Model Efficiency & Sparsity",
-    "Interpretability & Robustness of Neural Networks",
-    "Biomedical Signal Processing"
+    "Interpretability & Robustness of Neural Networks"
   ],
   "news": [
     {
