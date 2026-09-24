@@ -35,16 +35,16 @@
   ],
   "news": [
     {
+      "date": "2026",
+      "text": "“PORT” accepted to Neurips 2026."
+    },
+    {
       "date": "2025",
       "text": "“Post-processing for Fair Regression via Explainable SVD” accepted to AISTATS 2025."
     },
     {
       "date": "2025",
       "text": "“Neuroplasticity and corruption in model mechanisms: A case study of indirect object identification” accepted to NAACL 2025."
-    },
-    {
-      "date": "2024",
-      "text": "“RA-LENet: R-Wave Attention and Local Enhancement for Noise Reduction in ECG Signals” accepted to IJCNN 2024."
     }
   ],
   "education": [

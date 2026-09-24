@@ -11,7 +11,8 @@
     "venue": "Preprint",
     "type": "preprint",
     "year": null,
-    "url": ""
+    "url": "",
+    "visible": false
   },
   {
     "title": "PORT: Preference Optimization via Robust Token-Level Reweighting",
@@ -23,9 +24,22 @@
       { "name": "Xueru Zhang" },
       { "name": "Mohammad Mahdi Khalili" }
     ],
-    "venue": "Preprint",
-    "type": "preprint",
-    "year": null,
+    "venue": "Neurips",
+    "type": "conference",
+    "year": 2026,
+    "url": ""
+  },
+    {
+    "title": "  Self-Consuming Generative Models with Co-Evolving Human Preferences",
+    "authors": [
+      { "name": "Xiukun Wei"},
+      { "name": "Tian Xie"},
+      { "name": "Ding Zhu", "self": true },
+      { "name": "Xueru Zhang" }
+    ],
+    "venue": "Neurips",
+    "type": "conference",
+    "year": 2026,
     "url": ""
   },
   {
@@ -37,7 +51,8 @@
     "venue": "Preprint",
     "type": "preprint",
     "year": null,
-    "url": ""
+    "url": "",
+    "visible": false
   },
   {
     "title": "Enhancing Model Robustness Against Noisy Labels via Kronecker Product Decomposition",
@@ -50,7 +65,8 @@
     "venue": "Preprint",
     "type": "preprint",
     "year": null,
-    "url": ""
+    "url": "",
+    "visible": false
   },
   {
     "title": "Limitations of In-Context Learning for Strategic Classification",
@@ -63,7 +79,8 @@
     "venue": "Preprint",
     "type": "preprint",
     "year": null,
-    "url": ""
+    "url": "",
+    "visible": false
   },
   {
     "title": "An Efficient Training Algorithm for Models with Block-wise Sparsity",

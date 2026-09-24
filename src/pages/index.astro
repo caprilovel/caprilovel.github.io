@@ -4,7 +4,10 @@ import PublicationCard from '../components/PublicationCard.astro';
 import SocialLinks from '../components/SocialLinks.astro';
 import AdvisorList from '../components/AdvisorList.astro';
 import site from '../data/site.json';
-import publications from '../data/publications.json';
+import allPublications from '../data/publications.json';
+
+// Entries with "visible": false are hidden (e.g. under double-blind review).
+const publications = allPublications.filter((p) => p.visible !== false);
 
 const recent = publications.slice(0, 3);
 ---

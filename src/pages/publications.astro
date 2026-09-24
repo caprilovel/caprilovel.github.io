@@ -2,7 +2,10 @@
 import Layout from '../components/Layout.astro';
 import PublicationCard from '../components/PublicationCard.astro';
 import site from '../data/site.json';
-import publications from '../data/publications.json';
+import allPublications from '../data/publications.json';
+
+// Entries with "visible": false are hidden (e.g. under double-blind review).
+const publications = allPublications.filter((p) => p.visible !== false);
 
 const conference = publications.filter((p) => p.type === 'conference');
 const preprint = publications.filter((p) => p.type === 'preprint');
