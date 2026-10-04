@@ -1,5 +1,17 @@
 [
   {
+    "title": "WAQS: Weight Absorption for Quadratic Probing and Affine Steering",
+    "authors": [
+      { "name": "Mohammad Mahdi Khalili*" },
+      { "name": "Ding Zhu*", "self": true }
+    ],
+    "venue": "Preprint",
+    "type": "preprint",
+    "year": null,
+    "url": "",
+    "visible": false
+  },
+  {
     "title": "SPRINT-SVRG: Stochastic Performative Prediction With Variance Reduction",
     "authors": [
       { "name": "Tian Xie*"},
@@ -30,7 +42,7 @@
     "url": ""
   },
     {
-    "title": "  Self-Consuming Generative Models with Co-Evolving Human Preferences",
+    "title": "Self-Consuming Generative Models with Co-Evolving Human Preferences",
     "authors": [
       { "name": "Xiukun Wei"},
       { "name": "Tian Xie"},
@@ -42,17 +54,22 @@
     "year": 2026,
     "url": ""
   },
-  {
-    "title": "WAQS: Weight Absorption for Quadratic Probing and Affine Steering",
+    {
+    "title": "EXHIB: A Benchmark for Realistic and Diverse Evaluation of Function Similarity in the Wild",
     "authors": [
-      { "name": "Mohammad Mahdi Khalili*" },
-      { "name": "Ding Zhu*", "self": true }
+      { "name": "Yiming Fan"},
+      { "name": "Jun Yeon Won"},
+      { "name": "Ding Zhu*", "self": true },
+      { "name": "Melih Sirlanci" },
+      { "name": "Mohammad Mahdi Khalili" },
+      { "name": "Zhiqiang Lin"},
+      { "name": "Carter Yageman"}
     ],
-    "venue": "Preprint",
-    "type": "preprint",
-    "year": null,
+    "venue": "EAI smart",
+    "type": "conference",
+    "year": 2026,
     "url": "",
-    "visible": false
+    "visible": true
   },
   {
     "title": "Enhancing Model Robustness Against Noisy Labels via Kronecker Product Decomposition",
@@ -116,6 +133,30 @@
     "venue": "NAACL findings",
     "type": "conference",
     "year": 2025,
+    "url": ""
+  },
+  {
+    "title": "ECG signal denoising using multi-scale patch embedding and transformers",
+    "authors": [
+      { "name": "Ding Zhu", "self": true },
+      { "name": "Vishnu Kabir Chhabra" },
+      { "name": "Mohammad Mahdi Khalili" }
+    ],
+    "venue": "ICML Workshop(Next Generation of Sequence Modeling Architectures )",
+    "type": "conference",
+    "year": 2024,
+    "url": ""
+  },
+  {
+    "title": "Training block-wise sparse models using kronecker product decomposition",
+    "authors": [
+      { "name": "Ding Zhu", "self": true },
+      { "name": "Zhiqun Zuo" },
+      { "name": "Mohammad Mahdi Khalili" }
+    ],
+    "venue": "Neurips Workshop(Machine Learning and Compression)",
+    "type": "conference",
+    "year": 2024,
     "url": ""
   },
   {
