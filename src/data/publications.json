@@ -23,7 +23,7 @@
     "venue": "TMLR",
     "type": "journal",
     "year": null,
-    "url": "",
+    "url": "https://arxiv.org/abs/2509.17304",
     "visible": true
   },
   {
@@ -39,7 +39,7 @@
     "venue": "Neurips",
     "type": "conference",
     "year": 2026,
-    "url": ""
+    "url": "https://openreview.net/forum?id=Z0gcomg5dI#discussion"
   },
     {
     "title": "Self-Consuming Generative Models with Co-Evolving Human Preferences",
@@ -52,7 +52,7 @@
     "venue": "Neurips",
     "type": "conference",
     "year": 2026,
-    "url": ""
+    "url": "https://arxiv.org/html/2610.09415v1"
   },
     {
     "title": "EXHIB: A Benchmark for Realistic and Diverse Evaluation of Function Similarity in the Wild",
@@ -68,7 +68,7 @@
     "venue": "EAI smart",
     "type": "conference",
     "year": 2026,
-    "url": "",
+    "url": "https://arxiv.org/abs/2604.01554",
     "visible": true
   },
   {
@@ -109,7 +109,7 @@
     "venue": "TMLR",
     "type": "journal",
     "year": null,
-    "url": ""
+    "url": "https://arxiv.org/abs/2503.21928"
   },
   {
     "title": "Post-processing for Fair Regression via Explainable SVD",
@@ -121,7 +121,7 @@
     "venue": "AISTATS",
     "type": "conference",
     "year": 2025,
-    "url": ""
+    "url": "https://arxiv.org/abs/2504.03093"
   },
   {
     "title": "Neuroplasticity and corruption in model mechanisms: A case study of indirect object identification",
@@ -133,7 +133,7 @@
     "venue": "NAACL findings",
     "type": "conference",
     "year": 2025,
-    "url": ""
+    "url": "https://arxiv.org/abs/2503.01896"
   },
   {
     "title": "ECG signal denoising using multi-scale patch embedding and transformers",
@@ -145,7 +145,7 @@
     "venue": "ICML Workshop(Next Generation of Sequence Modeling Architectures )",
     "type": "conference",
     "year": 2024,
-    "url": ""
+    "url": "https://arxiv.org/abs/2407.11065"
   },
   {
     "title": "Training block-wise sparse models using kronecker product decomposition",
@@ -169,6 +169,6 @@
     "venue": "IJCNN",
     "type": "conference",
     "year": 2024,
-    "url": ""
+    "url": "https://ieeexplore.ieee.org/document/10650979"
   }
 ]
