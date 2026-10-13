@@ -20,11 +20,11 @@
       { "name": "Mohammad Mahdi Khalili" },
       { "name": "Xueru Zhang" }
     ],
-    "venue": "Preprint",
-    "type": "preprint",
+    "venue": "TMLR",
+    "type": "journal",
     "year": null,
     "url": "",
-    "visible": false
+    "visible": true
   },
   {
     "title": "PORT: Preference Optimization via Robust Token-Level Reweighting",
