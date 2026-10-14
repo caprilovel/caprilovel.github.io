@@ -59,7 +59,7 @@
     "authors": [
       { "name": "Yiming Fan"},
       { "name": "Jun Yeon Won"},
-      { "name": "Ding Zhu*", "self": true },
+      { "name": "Ding Zhu", "self": true },
       { "name": "Melih Sirlanci" },
       { "name": "Mohammad Mahdi Khalili" },
       { "name": "Zhiqiang Lin"},
