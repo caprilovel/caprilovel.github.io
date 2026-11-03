@@ -148,6 +148,18 @@
     "url": "https://arxiv.org/abs/2407.11065"
   },
   {
+    "title": "A Multi-scale Multivariate Time Series Classification Method Based on Bag of Patterns",
+    "authors": [
+      { "name": "Yuxiao Wang"},
+      { "name": "Ding Zhu", "self": true },
+      { "name": "Juan Liu" }
+    ],
+    "venue": "ICIC )",
+    "type": "conference",
+    "year": 2024,
+    "url": ""
+  },
+  {
     "title": "Training block-wise sparse models using kronecker product decomposition",
     "authors": [
       { "name": "Ding Zhu", "self": true },
