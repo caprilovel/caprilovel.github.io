@@ -1,22 +1,54 @@
 ---
+import people from '../data/people.json';
+
 const { pub } = Astro.props;
+
+// Homepage lookup: an author's own `url` wins, otherwise people.json keyed by
+// name (or by `key` when the displayed name differs). Trailing equal-contribution
+// markers like "*" or "†" are ignored when matching.
+const authorUrl = (a) => {
+  if (a.url) return a.url;
+  const key = a.key ?? a.name.replace(/[*†‡]+$/, '').trim();
+  return people[key] || '';
+};
 ---
 
 <article class="card p-4 transition-shadow hover:shadow-md">
   <h3 class="font-medium leading-snug text-slate-900 dark:text-white">{pub.title}</h3>
   <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">
-    {pub.authors.map((a, i) => (
-      <>
-        {a.self ? <strong class="font-semibold text-slate-900 dark:text-white">{a.name}</strong> : a.name}
-        {i < pub.authors.length - 1 ? ', ' : ''}
-      </>
-    ))}
+    {pub.authors.map((a, i) => {
+      const url = a.self ? '' : authorUrl(a);
+      return (
+        <>
+          {a.self ? (
+            <strong class="font-semibold text-slate-900 dark:text-white">{a.name}</strong>
+          ) : url ? (
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="underline decoration-slate-300 underline-offset-2 transition-colors hover:text-indigo-600 dark:decoration-slate-600 dark:hover:text-indigo-400"
+            >
+              {a.name}
+            </a>
+          ) : (
+            a.name
+          )}
+          {i < pub.authors.length - 1 ? ', ' : ''}
+        </>
+      );
+    })}
   </p>
   <div class="mt-2 flex flex-wrap items-center gap-3 text-sm">
     <span class="tag">{pub.venue}{pub.year ? ` ${pub.year}` : ''}</span>
     {pub.url && (
       <a href={pub.url} target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline dark:text-indigo-400">
         Paper &rarr;
+      </a>
+    )}
+    {pub.code && (
+      <a href={pub.code} target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline dark:text-indigo-400">
+        Code &rarr;
       </a>
     )}
   </div>
